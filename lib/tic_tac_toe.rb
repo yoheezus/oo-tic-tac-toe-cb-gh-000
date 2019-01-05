@@ -37,7 +37,8 @@ class TicTacToe
     end
 
     def turn
-        user_input =
+        user_input = gets
+    end
 
     @WIN_COMBINATIONS = [
     [0, 1, 2],
