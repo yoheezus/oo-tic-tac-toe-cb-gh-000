@@ -58,6 +58,10 @@ class TicTacToe
         end
     end
 
+    def full?
+        @board.all? { |i| i == "X" || i == "O"}
+    end
+
     WIN_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
