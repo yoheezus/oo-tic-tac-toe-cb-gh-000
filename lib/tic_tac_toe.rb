@@ -37,11 +37,16 @@ class TicTacToe
     end
 
     def turn
-        token = current_player
+        player = current_player
         puts "#{token} Enter a number between 1-9: "
         user_input = gets.strip
         converted_input = input_to_index(user_input)
         if valid_move?(converted_input)
+            move(converted_input, player)
+            display_board
+        else
+            turn
+        end
     end
 
     WIN_COMBINATIONS = [
