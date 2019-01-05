@@ -80,7 +80,7 @@ class TicTacToe
         turn until over?
         if won?
             winna = winner
-            puts "Congratuatlions #{winna}!"
+            puts "Congratulations #{winna}!"
         elsif draw?
             puts "Cat's Game!"
         end
