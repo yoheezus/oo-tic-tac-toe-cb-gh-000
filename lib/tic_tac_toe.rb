@@ -76,6 +76,16 @@ class TicTacToe
         end
     end
 
+    def play
+        turn until over?
+        if won?
+            winna = winner
+            puts "Congratuatlions #{winna}!"
+        elsif draw?
+            puts "Cat's Game!"
+        end
+    end
+
     WIN_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
@@ -85,4 +95,6 @@ class TicTacToe
     [2, 5, 8],
     [0, 4, 8],
     [2, 4, 6]]
+
+
 end
