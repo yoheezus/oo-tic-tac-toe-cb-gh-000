@@ -24,9 +24,12 @@ class TicTacToe
         @board[index] == "X" || @board[index] == "O"
     end
 
-    def valid_move?
-        
+    def valid_move?(index)
+        index.between?(0, 8) && !position_taken?(index)
     end
+
+    def turn_count
+        @board.count { |i| i == "X" || i == "O" }
 
     @WIN_COMBINATIONS = [
     [0, 1, 2],
