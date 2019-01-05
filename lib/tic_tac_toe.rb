@@ -30,6 +30,10 @@ class TicTacToe
 
     def turn_count
         @board.count { |i| i == "X" || i == "O" }
+    end
+
+    def current_player
+        turn_count.even? ? "X" : "O"
 
     @WIN_COMBINATIONS = [
     [0, 1, 2],
