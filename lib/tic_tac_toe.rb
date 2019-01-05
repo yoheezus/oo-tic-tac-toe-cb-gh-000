@@ -66,6 +66,15 @@ class TicTacToe
         !won? && full?
     end
 
+    def over?
+        won? || draw?
+
+    def winner
+        if winning_combo = won?
+            @board[winning_combo.first]
+        end
+    end
+
     WIN_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
