@@ -34,6 +34,10 @@ class TicTacToe
 
     def current_player
         turn_count.even? ? "X" : "O"
+    end
+
+    def turn
+        user_input =
 
     @WIN_COMBINATIONS = [
     [0, 1, 2],
