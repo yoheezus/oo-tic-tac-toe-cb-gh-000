@@ -20,6 +20,14 @@ class TicTacToe
         @board[position] = token
     end
 
+    def position_taken?(index)
+        @board[index] == "X" || @board[index] == "O"
+    end
+
+    def valid_move?
+        
+    end
+
     @WIN_COMBINATIONS = [
     [0, 1, 2],
     [3, 4, 5],
